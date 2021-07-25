@@ -17,6 +17,8 @@ The Ministry referred to these numbers as "patients" rather than "cases". They s
 
 Secondary repositories kept these numbers as if they were case numbers and this caused significant changes in the recording standards for the country. Actual case numbers are now known but we still do not have the daily increases for this gap.
 
+![](images/graph.PNG)
+
 ### Goal of the Project
 
 This project aims to estimate daily increases of case numbers for these days. There are several facts and data that makes it possible to build a high accurate machine learning model to solve this problem. 
@@ -45,7 +47,7 @@ These facts are:
 
   Daily tests and recovered cases are used as features in the model.
   
-  The most related feature was increase in deaths from 15 days later. This feature is created to acquire a stronger relation. It takes approximately 15 days to die from Covid-19   (Linton et al, 2020). Inspirations of this feature were mentioned in the acknowledgements section.
+  The most related feature was increase in deaths from 15 days later. This feature is created to acquire a stronger relation. It takes approximately 15 days to die from Covid-19   (Linton et al., 2020). Inspirations of this feature were mentioned in the acknowledgements section.
   
 ### The Most Important Variables in the Notebook
 
