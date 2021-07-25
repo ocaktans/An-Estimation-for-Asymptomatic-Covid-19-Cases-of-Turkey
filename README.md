@@ -55,7 +55,7 @@ These facts are:
 
   Daily tests and recovered cases are used as features in the model.
   
-  The most related feature was increases in deaths from 15 days later. This feature is created to acquire a stronger relation. It takes approximately 15 days to die from Covid-19 (Linton et al., 2020). Inspirations of this feature were mentioned in the acknowledgments section.
+  The most related feature was the increase in deaths from 15 days later. This feature is created to acquire a stronger relation. It takes approximately 15 days to die from Covid-19 (Linton et al., 2020). Inspirations of this feature were mentioned in the acknowledgments section.
   
   Estimations are also used as coefficients to distribute cumulative cases that were announced on the 10th of December 2021 as an adjustment.
   
