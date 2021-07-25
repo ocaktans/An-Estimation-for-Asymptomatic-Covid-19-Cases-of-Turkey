@@ -7,7 +7,13 @@
 
 ##### Second dataset is processed with the data from the Ministry of Health in Turkey 
 
-#### Studies of 
+##### Several studies inspired me to create a new feature. These studies are;
+
+Jombart T, van Zandvoort K, Russell TW et al. Inferring the number of COVID-19 cases from recently reported deaths [version 1; peer review: 2 approved]. Wellcome Open Res 2020, 5:78 (https://doi.org/10.12688/wellcomeopenres.15786.1)
+
+Pueyo T. Coronavirus: Why You Must Act Now (https://tomaspueyo.medium.com/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca)
+
+Linton NM, Kobayashi T, Yang Y, Hayashi K et al. Incubation Period and Other Epidemiological Characteristics of 2019 Novel Coronavirus Infections with Right Truncation: A Statistical Analysis of Publicly Available Case Data. Journal of Clinical Medicine. 2020; 9(2):538. https://doi.org/10.3390/jcm9020538
 
 ### Problem
 
@@ -18,6 +24,8 @@ The Ministry referred to these numbers as "patients" rather than "cases". They s
 Secondary repositories kept these numbers as if they were case numbers and this caused significant changes in the recording standards for the country. Actual case numbers are now known but we still do not have the daily increases for this gap.
 
 ![](images/graph.PNG)
+
+Graph above shows the leap on the day that the Ministry started to announce case numbers once again according to secondary repositories.
 
 ### Goal of the Project
 
@@ -31,7 +39,7 @@ These facts are:
        We know the case numbers of the first months and the last months. 
        
 ### Timeline
-###### On 29th of July 2020, the phrase "Case" changed to "Patients" on the graphs that the Ministry of Health announces
+###### On 29th of July 2020, the phrase "Case" changed to "Patients" on the graphs that the Ministry of Health shares with the public
             Turkey started to announce only the symptomatic cases.
             Secondary repositories kept recording these numbers as cases.
             
@@ -49,25 +57,10 @@ These facts are:
   
   The most related feature was increase in deaths from 15 days later. This feature is created to acquire a stronger relation. It takes approximately 15 days to die from Covid-19   (Linton et al., 2020). Inspirations of this feature were mentioned in the acknowledgements section.
   
-### The Most Important Variables in the Notebook
+  Estimations are also used as coefficients to distribute cumulative cases that were announced on 10th of December 2021 as an adjustment.
+  
+### Contents
 
-  "df" represents a dataframe object which contains data from the secondary source.
-      Columns of this dataframe are Date, Confirmed(cumulative cases), Deaths(cumulative deaths), Death Rate(%), Increase(increase in the cases). 
-      
-  "turkey" represents a dataframe object which contains data from the Ministry.
-      Columns of this dataframe are Date, Inc_Test, Inc_Case, Inc_Patient, Inc_Deaths, Inc_Recovered, Total_Tests, Total_Patient, Total_Deaths, Total_Recovered, Heavily_Ill,	         Pneumonia_Ratio where columns that start with Inc_ holds daily increases and the ones that start with Total_ shows total numbers at the date.
-      
-### Problems with the Datasets
+This repository contains a jupyter notebook that shows all of the steps from scratch to an estimation and an adjustment.
 
-Case numbers of Turkey were being recorded in the patients column until 29th of July. The dataframe from the ministry does not have records in this column until 27th of March 2020. These were filled with the secondary source.
-
-The daily case numbers between 29th of July 2020 and 25th of November 2020 are unknown. These days are being mentioned as "the gap" 
-
-"Inc_Patient" column starts recording symptomatic cases on 29th of July 2020. On the same day "Inc_Case" column starts recording the cases. Any sudden leaps or falls can not be observed for the "Inc_Patient" on that day. Meaning that the distinction between the cases and the symptomatic cases was not precise at the beginning.
-
-Two columns are desired as independent variables: "Inc_Patient" and "Inc_Deaths"(or "IncreaseDeath").
-
-Values will be taken starting from 25th of November 2020 since they were cases before that. 
-The gap will be excluded.
-
-Corresponding deaths for the day will be taken from the date which is 15 days later since covid-19 causes death approximately 15 days after the illness starts. 
+You will also find a csv file that contains several covid-19 attributes and the estimations.
