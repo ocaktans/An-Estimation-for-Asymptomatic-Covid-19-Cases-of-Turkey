@@ -63,4 +63,4 @@ These facts are:
 
 This repository contains a jupyter notebook that shows all of the steps from scratch to an estimation and an adjustment.
 
-You will also find a csv file that contains several covid-19 attributes and the estimations.
+You will also find a csv file that contains several covid-19 attributes of Turkey and the estimations.
