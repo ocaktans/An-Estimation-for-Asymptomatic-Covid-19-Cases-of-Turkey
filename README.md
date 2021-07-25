@@ -3,9 +3,9 @@
 
 ### Acknowledgments
 
-##### This project has 2 different dataset from 2 different sources. I have prepared one of them in another project which used data from "COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University", link to their repo is https://github.com/CSSEGISandData/COVID-19.
+##### This project has 2 different datasets from 2 different sources. I have prepared one of them in another project which used data from "COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University", link to their repo is https://github.com/CSSEGISandData/COVID-19.
 
-##### Second dataset is processed with the data from the Ministry of Health in Turkey 
+##### The second dataset is processed with the data from the Ministry of Health in Turkey 
 
 ##### Several studies inspired me to create a new feature. These studies are;
 
@@ -17,7 +17,7 @@ Linton NM, Kobayashi T, Yang Y, Hayashi K et al. Incubation Period and Other Epi
 
 ### Problem
 
-Republic of Turkey was one of the countries which announce only symptomatic Covid-19 cases. Yet, this policy only took about 3 months.
+The Republic of Turkey was one of the countries which announce only symptomatic Covid-19 cases. Yet, this policy only took about 3 months.
 
 The Ministry referred to these numbers as "patients" rather than "cases". They started to announce asymptomatic cases once again and revealed the total case numbers in the country. 
 
@@ -25,11 +25,11 @@ Secondary repositories kept these numbers as if they were case numbers and this 
 
 ![](images/graph.PNG)
 
-Graph above shows the leap on the day that the Ministry started to announce case numbers once again according to secondary repositories.
+The graph above shows the leap on the day that the Ministry started to announce case numbers once again according to secondary repositories.
 
-### Goal of the Project
+### The Goal of the Project
 
-This project aims to estimate daily increases of case numbers for these days. There are several facts and data that makes it possible to build a high accurate machine learning model to solve this problem. 
+This project aims to estimate daily increases of case numbers for these days. There are several facts and data that make it possible to build a highly accurate machine learning model to solve this problem. 
 
 These facts are:
 
@@ -39,14 +39,14 @@ These facts are:
        We know the case numbers of the first months and the last months. 
        
 ### Timeline
-###### On 29th of July 2020, the phrase "Case" changed to "Patients" on the graphs that the Ministry of Health shares with the public
+###### On the 29th of July 2020, the phrase "Case" changed to "Patients" on the graphs that the Ministry of Health shares with the public
             Turkey started to announce only the symptomatic cases.
             Secondary repositories kept recording these numbers as cases.
             
-###### On 25th of November 2020 the Ministry started to announce the cases once again
+###### On the 25th of November 2020, the Ministry started to announce the cases once again
             There were not any adjustments for the previous cases.
             
-###### On 10th of December 2020 the Ministry revealed missing previous cases cumulatively
+###### On the 10th of December 2020, the Ministry revealed missing previous cases cumulatively
             Secondary repositories kept this number as if the cases were discovered that day.
             
 ### Methodology
@@ -55,9 +55,9 @@ These facts are:
 
   Daily tests and recovered cases are used as features in the model.
   
-  The most related feature was increase in deaths from 15 days later. This feature is created to acquire a stronger relation. It takes approximately 15 days to die from Covid-19   (Linton et al., 2020). Inspirations of this feature were mentioned in the acknowledgements section.
+  The most related feature was increases in deaths from 15 days later. This feature is created to acquire a stronger relation. It takes approximately 15 days to die from Covid-19 (Linton et al., 2020). Inspirations of this feature were mentioned in the acknowledgments section.
   
-  Estimations are also used as coefficients to distribute cumulative cases that were announced on 10th of December 2021 as an adjustment.
+  Estimations are also used as coefficients to distribute cumulative cases that were announced on the 10th of December 2021 as an adjustment.
   
 ### Contents
 
