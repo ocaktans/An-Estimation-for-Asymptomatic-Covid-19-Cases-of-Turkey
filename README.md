@@ -3,7 +3,7 @@
 
 ### Acknowledgments
 
-##### This project has 2 different datasets from 2 different sources. I have prepared one of them in another project which used data from "COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University", link to their repo is https://github.com/CSSEGISandData/COVID-19.
+##### This project has 2 different datasets from 2 different sources. I have prepared one of them in another project which used data from "COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University", link to their repo is https://github.com/CSSEGISandData/COVID-19
 
 ##### The second dataset is processed with the data from the Ministry of Health in Turkey 
 
@@ -13,7 +13,7 @@ Jombart T, van Zandvoort K, Russell TW et al. Inferring the number of COVID-19 c
 
 Pueyo T. Coronavirus: Why You Must Act Now (https://tomaspueyo.medium.com/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca)
 
-Linton NM, Kobayashi T, Yang Y, Hayashi K et al. Incubation Period and Other Epidemiological Characteristics of 2019 Novel Coronavirus Infections with Right Truncation: A Statistical Analysis of Publicly Available Case Data. Journal of Clinical Medicine. 2020; 9(2):538. https://doi.org/10.3390/jcm9020538
+Linton NM, Kobayashi T, Yang Y, Hayashi K et al. Incubation Period and Other Epidemiological Characteristics of 2019 Novel Coronavirus Infections with Right Truncation: A Statistical Analysis of Publicly Available Case Data. Journal of Clinical Medicine. 2020; 9(2):538. (https://doi.org/10.3390/jcm9020538)
 
 ### Problem
 
